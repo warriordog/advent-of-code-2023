@@ -8,4 +8,13 @@
         <RootNamespace>AdventOfCode.Solutions</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Util\Util.csproj" />
+      <ProjectReference Include="..\Inputs\Inputs.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    </ItemGroup>
+
 </Project>

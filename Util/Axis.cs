@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Common.Util;
+﻿namespace AdventOfCode.Util;
 
 public class Axis<T>
 {

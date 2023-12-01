@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Common.Util;
+﻿namespace AdventOfCode.Util;
 
 // y / row / vertical
 // x / col / horizontal

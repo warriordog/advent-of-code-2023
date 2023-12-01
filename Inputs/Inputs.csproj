@@ -9,13 +9,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
-      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Official\day01.txt" />
-      <EmbeddedResource Include="Official\day01.txt" />
+        <EmbeddedResource Include="Official\day01.txt" />
+        <EmbeddedResource Include="Test\day01test1.txt" />
+        <EmbeddedResource Include="Test\day01test2.txt" />
+        <None Remove="Test\day01test3.txt" />
+        <EmbeddedResource Include="Test\day01test3.txt" />
     </ItemGroup>
 
 </Project>

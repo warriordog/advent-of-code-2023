@@ -1,4 +1,4 @@
-namespace AdventOfCode.Common;
+namespace AdventOfCode.Inputs;
 
 /// <summary>
 /// Expected use case for an input file

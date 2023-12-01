@@ -1,5 +1,5 @@
 ﻿
-namespace AdventOfCode.Common;
+namespace AdventOfCode.Inputs;
 
 /// <summary>
 /// Defines an input file that can be loaded and passed to a solution.

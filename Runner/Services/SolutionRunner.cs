@@ -1,7 +1,8 @@
 ﻿using System.Text;
-using AdventOfCode.Common;
+using AdventOfCode.Inputs;
 using AdventOfCode.Runner.Benchmark;
 using AdventOfCode.Runner.Util;
+using AdventOfCode.Solutions;
 
 namespace AdventOfCode.Runner.Services;
 

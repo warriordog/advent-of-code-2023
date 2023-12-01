@@ -1,4 +1,4 @@
-namespace AdventOfCode.Common;
+namespace AdventOfCode.Inputs;
 
 /// <summary>
 /// Determines how the input file should be located.

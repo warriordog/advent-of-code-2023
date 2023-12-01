@@ -1,7 +1,7 @@
-﻿using AdventOfCode.Common;
-using AdventOfCode.Runner.Benchmark;
+﻿using AdventOfCode.Runner.Benchmark;
 using AdventOfCode.Runner.Services;
 using AdventOfCode.Runner.Util;
+using AdventOfCode.Solutions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;

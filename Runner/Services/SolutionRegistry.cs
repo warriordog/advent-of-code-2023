@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using AdventOfCode.Common;
+using AdventOfCode.Solutions;
 using Microsoft.Extensions.Logging;
 
 namespace AdventOfCode.Runner.Services;
@@ -27,7 +27,10 @@ public class SolutionRegistry : ISolutionRegistry
             .SelectMany(p => p.Solutions));
 
     private readonly ILogger<SolutionRegistry> _logger;
-    public SolutionRegistry(ILogger<SolutionRegistry> logger) => _logger = logger;
+    public SolutionRegistry(ILogger<SolutionRegistry> logger)
+    {
+        _logger = logger;
+    }
 
     public IEnumerable<SolutionEntry> GetSolutionsByFilter(string? day, string? part, string? variant) => GetDaysByFilter(day)
         .SelectMany(d => d.GetPartsByFilter(part))

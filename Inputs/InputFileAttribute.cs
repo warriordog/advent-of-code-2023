@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Common;
+﻿namespace AdventOfCode.Inputs;
 
 /// <summary>
 /// Registers an input file for use with a particular solution 
@@ -13,7 +13,7 @@ public sealed class InputFileAttribute : Attribute, IInputFile
     public InputFileResolution Resolution { get; }
     public bool IsDefault { get; }
 
-    public InputFileAttribute(string path, InputFileType type = InputFileType.Standard, string? name = null, string? description = null, InputFileResolution resolution = InputFileResolution.EmbeddedResource, bool isDefault = false)
+    public InputFileAttribute(string path, InputFileType type = InputFileType.Standard, string? name = null, string? description = null, InputFileResolution resolution = InputFileResolution.Named, bool isDefault = false)
     {
         Path = path;
         IsDefault = isDefault;

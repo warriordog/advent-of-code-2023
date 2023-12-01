@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Common.Util;
+﻿namespace AdventOfCode.Util;
 
 /// <summary>
 /// Represents a point in 2D cartesian space.

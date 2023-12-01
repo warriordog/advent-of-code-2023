@@ -1,4 +1,4 @@
-namespace AdventOfCode.Common;
+namespace AdventOfCode.Solutions;
 
 /// <summary>
 /// An executable AdventOfCode solution.

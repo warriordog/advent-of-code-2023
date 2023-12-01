@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
-using AdventOfCode.Common;
+using AdventOfCode.Solutions;
 using Microsoft.Extensions.Options;
 
 namespace AdventOfCode.Runner.Benchmark;

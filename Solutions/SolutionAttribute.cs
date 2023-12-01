@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace AdventOfCode.Common;
+namespace AdventOfCode.Solutions;
 
 /// <summary>
 /// Indicates that a target class is an executable solution.

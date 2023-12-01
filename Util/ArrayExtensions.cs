@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Common.Util;
+﻿namespace AdventOfCode.Util;
 
 public static class ArrayExtensions
 {
