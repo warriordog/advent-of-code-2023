@@ -23,19 +23,19 @@ public abstract class Day02 : ISolution
         => inputFile
             .SplitByEOL()
             .SkipEmptyStrings()
-            .SelectRegexMatch(Expressions.CubeGameInfo())
             .Select(ReadGame)
             .ToList();
     
-    private static CubeGame ReadGame(Match gameMatch)
+    private static CubeGame ReadGame(string line)
     {
-        var gameId = int.Parse(gameMatch.Groups[1].Value);
+        var match = Expressions.CubeGameInfo().Match(line);
+        var gameId = int.Parse(match.Groups[1].Value);
         var game = new CubeGame
         {
             GameID = gameId
         };
 
-        var countString = gameMatch.Groups[2].Value;
+        var countString = match.Groups[2].Value;
         ReadCounts(countString, game);
 
         return game;
