@@ -1,7 +1,7 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Day 01, Part 2 (test)" type="DotNetProject" factoryName=".NET Project">
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Day 01, Part 1 (test)" type="DotNetProject" factoryName=".NET Project">
     <option name="EXE_PATH" value="$PROJECT_DIR$/Runner/bin/Debug/net7.0/AdventOfCode.Runner.exe" />
-    <option name="PROGRAM_PARAMETERS" value="run Day01 Part2 --input Test.day01test2.txt" />
+    <option name="PROGRAM_PARAMETERS" value="run Day01 Part1 --input Test.day01test1.txt" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Runner/bin/Debug/net7.0" />
     <option name="PASS_PARENT_ENVS" value="1" />
     <option name="USE_EXTERNAL_CONSOLE" value="0" />
