@@ -1,4 +1,4 @@
-﻿# Day 1 - Trebuchet?!
+﻿# Day 1: Trebuchet?!
 
 This was the hardest day-one challenge that I've ever seen in AoC.
 Hopefully the others don't follow suit!
