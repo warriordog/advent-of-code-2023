@@ -26,4 +26,11 @@ public static partial class Expressions
             // This matches individual characters, so RTL is irrelevant.
             false => DigitsWithoutWords()
         };
+    
+    [GeneratedRegex(@"^Game (\d+): (.*)$")]
+    public static partial Regex CubeGameInfo();
+
+    
+    [GeneratedRegex(@"(\d+) (red|green|blue)+")]
+    public static partial Regex CubeCounts();
 }

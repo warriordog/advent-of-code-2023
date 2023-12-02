@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode.Util;
+﻿using System.Text.RegularExpressions;
+
+namespace AdventOfCode.Util;
 
 public static class CollectionExtensions
 {
@@ -34,4 +36,13 @@ public static class CollectionExtensions
             yield return list[i];
         }
     }
+
+    public static IEnumerable<string> SelectRegexValue(this IEnumerable<string> stream, Regex regex, int group = 0)
+        => stream.Select(str => regex.Match(str).Groups[group].Value);
+
+    public static IEnumerable<Match> SelectRegexMatch(this IEnumerable<string> stream, Regex regex)
+        => stream.Select(str => regex.Match(str));
+    
+    public static IEnumerable<MatchCollection> SelectRegexMatches(this IEnumerable<string> stream, Regex regex)
+        => stream.Select(str => regex.Matches(str));
 }

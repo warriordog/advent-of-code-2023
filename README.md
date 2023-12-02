@@ -35,9 +35,10 @@ Feedback and questions are welcome!
        * `command` - if set, shows detailed help about a specific command.
 
 ### Solutions
-| Day                         | Part 1                                         | Part 2                                         | Name                                               |
-|-----------------------------|------------------------------------------------|------------------------------------------------|----------------------------------------------------|
-| [Day01](Solutions/Day01)    | [Part1](Solutions/Day01/Day01Part1.cs)         | [Part2](Solutions/Day01/Day01Part2.cs)         | [Trebuchet?!](https://adventofcode.com/2023/day/1) |
+| Day                      | Part 1                                 | Part 2                                 | Name                                                  |
+|--------------------------|----------------------------------------|----------------------------------------|-------------------------------------------------------|
+| [Day01](Solutions/Day01) | [Part1](Solutions/Day01/Day01Part1.cs) | [Part2](Solutions/Day01/Day01Part2.cs) | [Trebuchet?!](https://adventofcode.com/2023/day/1)    |
+| [Day01](Solutions/Day02) | [Part1](Solutions/Day02/Day02Part1.cs) | [Part2](Solutions/Day02/Day02Part2.cs) | [Cube Conundrum](https://adventofcode.com/2023/day/2) |
 
 ### Details
 * Dotnet 7 is required to run the solutions.
