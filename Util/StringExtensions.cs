@@ -68,4 +68,26 @@ public static class StringExtensions
             } 
         }
     }
+
+    /// <summary>
+    /// Gets the length of the first line in a string, including line terminators.
+    /// Supports any combination of /r/n.
+    /// </summary>
+    public static int GetLineLength(this string inputString)
+    {
+        var endOfLinePosition = inputString.IndexOfAny(new[] { '\r', '\n' });
+        if (endOfLinePosition < 1)
+            throw new ArgumentException("Input string does not have lines", nameof(inputString));
+
+        for (var idx = endOfLinePosition; idx < inputString.Length; idx++)
+        {
+            var chr = inputString[idx];
+            
+            // The first non-EOL character is the index of the next line, and also our target length.
+            if (chr != '\r' && chr != '\n')
+                return idx;
+        }
+
+        return inputString.Length;
+    }
 }

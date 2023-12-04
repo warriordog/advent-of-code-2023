@@ -13,15 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="Official\day01.txt" />
-        <EmbeddedResource Include="Test\day01test1.txt" />
-        <EmbeddedResource Include="Test\day01test2.txt" />
-        <None Remove="Test\day01test3.txt" />
-        <EmbeddedResource Include="Test\day01test3.txt" />
-        <None Remove="Official\day02.txt" />
-        <EmbeddedResource Include="Official\day02.txt" />
-        <None Remove="Test\day02test1.txt" />
-        <EmbeddedResource Include="Test\day02test1.txt" />
+        <EmbeddedResource Include="Official\*.txt" />
+        <EmbeddedResource Include="Test\*.txt" />
     </ItemGroup>
 
 </Project>

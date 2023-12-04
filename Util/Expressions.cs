@@ -27,10 +27,25 @@ public static partial class Expressions
             false => DigitsWithoutWords()
         };
     
+    
     [GeneratedRegex(@"^Game (\d+): (.*)$")]
     public static partial Regex CubeGameInfo();
-
     
     [GeneratedRegex(@"(\d+) (red|green|blue)+")]
     public static partial Regex CubeCounts();
+
+
+    /// <summary>
+    ///     Matches engine part numbers OR symbols.
+    ///     Use <see cref="Match.Index"/> to get the byte offset.
+    ///     If group 1 is set, then this is a number.
+    ///     If group 2 is set, then this is a part.
+    /// </summary>
+    /// <remarks>
+    ///     Make sure to examine the first line separately - it's important to collect two pieces of information:
+    ///     * The length of the line
+    ///     * The length of the break between lines (usually 1 or 2 characters)
+    /// </remarks>
+    [GeneratedRegex(@"(\d+)|([^\d\s\.])")]
+    public static partial Regex SchematicMarkings();
 }
