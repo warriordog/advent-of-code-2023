@@ -11,7 +11,7 @@ public class Day01Part1 : Day01
     protected override int GetLineValue(string line)
     {
         var digits = Expressions
-            .Digits()
+            .Numbers()
             .Matches(line);
         
         // Concat *then* parse

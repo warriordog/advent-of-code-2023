@@ -21,11 +21,11 @@ public abstract class Day04 : ISolution
             .Select(m => new ScratchCard
                 {
                     CardNumber = int.Parse(m.Groups[1].ValueSpan),
-                    WinningNumbers = Expressions.Digits()
+                    WinningNumbers = Expressions.Numbers()
                         .Matches(m.Groups[2].Value)
                         .Select(wn => int.Parse(wn.ValueSpan))
                         .ToArray(),
-                    YourNumbers = Expressions.Digits()
+                    YourNumbers = Expressions.Numbers()
                         .Matches(m.Groups[3].Value)
                         .Select(wn => int.Parse(wn.ValueSpan))
                         .ToArray()

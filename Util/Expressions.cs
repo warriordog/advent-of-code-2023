@@ -60,5 +60,9 @@ public static partial class Expressions
     public static partial Regex ScratchCardNumbers();
 
     [GeneratedRegex(@"\d+")]
-    public static partial Regex Digits();
+    public static partial Regex Numbers();
+
+
+    [GeneratedRegex(@"^(\w+)-to-(\w+)")]
+    public static partial Regex MapKeys();
 }
