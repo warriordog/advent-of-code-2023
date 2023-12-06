@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Util;
 
@@ -48,4 +49,16 @@ public static partial class Expressions
     /// </remarks>
     [GeneratedRegex(@"(\d+)|([^\d\s\.])")]
     public static partial Regex SchematicMarkings();
+
+
+    /// <summary>
+    ///     Group 1: card number
+    ///     Group 2: winning numbers
+    ///     Group 3: your numbers
+    /// </summary>
+    [GeneratedRegex(@"^Card\s+(\d+):([\d\s]+)\|([\d\s]+)$", RegexOptions.Multiline)]
+    public static partial Regex ScratchCardNumbers();
+
+    [GeneratedRegex(@"\d+")]
+    public static partial Regex Digits();
 }

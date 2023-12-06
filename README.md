@@ -40,6 +40,7 @@ Feedback and questions are welcome!
 | [Day01](Solutions/Day01) | [Part1](Solutions/Day01/Day01Part1.cs) | [Part2](Solutions/Day01/Day01Part2.cs) | [Trebuchet?!](https://adventofcode.com/2023/day/1)    |
 | [Day02](Solutions/Day02) | [Part1](Solutions/Day02/Day02Part1.cs) | [Part2](Solutions/Day02/Day02Part2.cs) | [Cube Conundrum](https://adventofcode.com/2023/day/2) |
 | [Day03](Solutions/Day03) | [Part1](Solutions/Day03/Day03Part1.cs) | [Part2](Solutions/Day03/Day03Part2.cs) | [Gear Ratios](https://adventofcode.com/2023/day/3)    |
+| [Day04](Solutions/Day04) | [Part1](Solutions/Day04/Day04Part1.cs) | [Part2](Solutions/Day04/Day04Part2.cs) | [Scratch Cards](https://adventofcode.com/2023/day/4)  |
 
 ### Details
 * Dotnet 7 is required to run the solutions.

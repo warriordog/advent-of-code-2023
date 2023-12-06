@@ -45,4 +45,7 @@ public static class CollectionExtensions
     
     public static IEnumerable<MatchCollection> SelectRegexMatches(this IEnumerable<string> stream, Regex regex)
         => stream.Select(str => regex.Matches(str));
+    
+    public static string Print<TKey, TValue>(this Dictionary<TKey, TValue> dict) where TKey : notnull
+        => $"{{{string.Join(", ", dict.Select(e => $"{e.Key}={e.Value}"))}}}";
 }

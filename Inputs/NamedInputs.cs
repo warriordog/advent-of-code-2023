@@ -12,4 +12,7 @@ public static class NamedInputs
     
     public const string Day03 = "Official.day03.txt";
     public const string Day03Test1 = "Test.day03test1.txt";
+    
+    public const string Day04 = "Official.day04.txt";
+    public const string Day04Test1 = "Test.day04test1.txt";
 }
