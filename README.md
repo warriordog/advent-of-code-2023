@@ -42,6 +42,7 @@ Feedback and questions are welcome!
 | [Day03](Solutions/Day03) | [Part1](Solutions/Day03/Day03Part1.cs) | [Part2](Solutions/Day03/Day03Part2.cs) | [Gear Ratios](https://adventofcode.com/2023/day/3)                     |
 | [Day04](Solutions/Day04) | [Part1](Solutions/Day04/Day04Part1.cs) | [Part2](Solutions/Day04/Day04Part2.cs) | [Scratch Cards](https://adventofcode.com/2023/day/4)                   |
 | [Day05](Solutions/Day05) | [Part1](Solutions/Day05/Day05Part1.cs) | [Part2](Solutions/Day05/Day05Part2.cs) | [If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) |
+| [Day06](Solutions/Day06) | [Part1](Solutions/Day06/Day06Part1.cs) | [Part2](Solutions/Day06/Day06Part2.cs) | [Wait For It](https://adventofcode.com/2023/day/6)                     |
 
 ### Details
 * Dotnet 7 is required to run the solutions.

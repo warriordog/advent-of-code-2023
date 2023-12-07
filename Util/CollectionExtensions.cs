@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Numerics;
+using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Util;
 
@@ -48,4 +49,20 @@ public static class CollectionExtensions
     
     public static string Print<TKey, TValue>(this Dictionary<TKey, TValue> dict) where TKey : notnull
         => $"{{{string.Join(", ", dict.Select(e => $"{e.Key}={e.Value}"))}}}";
+
+    public static T Product<T>(this IEnumerable<T> stream)
+        where T : INumber<T>
+    {
+        var didRun = false;
+        
+        var result = stream.Aggregate(T.One, (prod, next) =>
+        {
+            didRun = true;
+            return prod * next;
+        });
+
+        return didRun
+            ? result
+            : T.Zero;
+    }
 }
